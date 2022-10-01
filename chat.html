@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="chat.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXgSTfWc8GeMYSSVpZXHaZHdoAntUWz1E",
+            authDomain: "sodium-pager-274312.firebaseapp.com",
+            databaseURL: "https://sodium-pager-274312.firebaseio.com",
+            projectId: "sodium-pager-274312",
+            storageBucket: "sodium-pager-274312.appspot.com",
+            messagingSenderId: "347556985853",
+            appId: "1:347556985853:web:91ad70cb9777203d7b3794",
+            measurementId: "G-7LM50D5TCV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <meta charset="utf-8">
+        <title>Firebase Sample</title>
+        <style>
+            ul > li:first-child {
+                color: black;
+                font-size: 25px;
+            }
+            ul > li:nth-child(2n) {
+                color: blue;
+            }
+            ul > li:nth-child(2n):before {
+                content:"ユーザー名："
+            }
+        </style>        
+    </head>
+    <body>
+          <div>
+           <!-- 投稿者 -->
+           <div>
+            <p>ユーザ名</p>
+            <textarea name="" id="jsi-name" cols="10" rows="1"></textarea>
+           </div>
+        
+           <!-- メッセージを打ち込む部分 -->
+           <div>
+            <p>内容</p>
+            <textarea name="" id="jsi-msg" cols="30" rows="4"></textarea>
+           </div>
+          </div>
+        
+          <!-- メッセージを送る部分 -->
+          <button name="button" id="jsi-button">send message!</button>
+        
+          <!-- チャット内容が動的に生成される部分 -->
+          <ul id="jsi-board" style="list-style:none;">
+            <li>〜チャット内容〜</li>
+          </ul>
+        Hello, Firebase!
+    </body>
+</html>

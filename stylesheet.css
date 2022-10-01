@@ -1,0 +1,47 @@
+body{
+    background-color:  #202020;
+    color: #ffffff;
+}
+.link{
+    color: #ffffff;
+}
+
+
+
+
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.video{
+    padding: 10px;
+    position: relative;
+}
+.length{
+    background-color: #ffffff;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    color: #000000;
+}
+.thum{
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    zoom:100%;
+}
+.title{
+    width: 320px;
+}
+
+
+
+
+.next_thum{
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    zoom: 100%;
+}
